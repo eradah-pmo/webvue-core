@@ -1,0 +1,170 @@
+{
+  "title": "Departments Management",
+  "subtitle": "Manage organizational departments and hierarchy",
+  "singular": "Department",
+  "plural": "Departments",
+  
+  "fields": {
+    "name": "Department Name",
+    "description": "Description",
+    "code": "Department Code",
+    "parent": "Parent Department",
+    "manager": "Department Manager",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "budget": "Budget",
+    "color": "Color",
+    "sortOrder": "Sort Order",
+    "users": "Users",
+    "subDepartments": "Sub-Departments",
+    "status": "Status",
+    "active": "Active",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At"
+  },
+  
+  "placeholders": {
+    "name": "Enter department name",
+    "description": "Enter department description",
+    "code": "Enter department code (e.g., IT, HR, FIN)",
+    "selectParent": "Select parent department",
+    "selectManager": "Select department manager",
+    "email": "department@company.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "Enter department address",
+    "budget": "0.00",
+    "sortOrder": "1",
+    "searchPlaceholder": "Search departments by name, code, or description..."
+  },
+  
+  "actions": {
+    "create": "Create Department",
+    "edit": "Edit Department",
+    "view": "View Department",
+    "delete": "Delete Department",
+    "toggleStatus": "Toggle Status",
+    "move": "Move Department",
+    "reorder": "Reorder Departments",
+    "generateCode": "Generate",
+    "assignManager": "Assign Manager",
+    "manageUsers": "Manage Users"
+  },
+  
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  
+  "labels": {
+    "rootDepartment": "Root Department",
+    "hierarchyLevel": "Level {{level}}",
+    "totalBudget": "Total Budget",
+    "totalUsers": "Total Users",
+    "directReports": "Direct Reports"
+  },
+  
+  "views": {
+    "table": "Table View",
+    "tree": "Tree View",
+    "hierarchy": "Hierarchy View",
+    "cards": "Cards View"
+  },
+  
+  "filters": {
+    "searchPlaceholder": "Search departments...",
+    "allStatus": "All Status",
+    "allDepartments": "All Departments",
+    "rootOnly": "Root Departments Only",
+    "activeOnly": "Active Only",
+    "inactiveOnly": "Inactive Only",
+    "withManager": "With Manager",
+    "withoutManager": "Without Manager"
+  },
+  
+  "sections": {
+    "basicInfo": "Basic Information",
+    "contactInfo": "Contact Information",
+    "additionalSettings": "Additional Settings",
+    "hierarchy": "Department Hierarchy",
+    "summary": "Department Summary",
+    "users": "Department Users",
+    "subDepartments": "Sub-Departments",
+    "statistics": "Statistics"
+  },
+  
+  "messages": {
+    "createSuccess": "Department created successfully",
+    "updateSuccess": "Department updated successfully",
+    "deleteSuccess": "Department deleted successfully",
+    "statusToggled": "Department status updated successfully",
+    "moved": "Department moved successfully",
+    "reordered": "Departments reordered successfully",
+    
+    "confirmDelete": "Are you sure you want to delete the department '{{name}}'?",
+    "confirmToggleStatus": "Are you sure you want to change the status of department '{{name}}'?",
+    "confirmMove": "Are you sure you want to move department '{{name}}'?",
+    
+    "createDescription": "Create a new department with organizational structure and settings",
+    "editDescription": "Edit department '{{name}}' settings and information",
+    
+    "cannotDelete": "This department cannot be deleted as it has users or sub-departments",
+    "cannotDeleteWithUsers": "Cannot delete department with assigned users",
+    "cannotDeleteWithSubDepartments": "Cannot delete department with sub-departments",
+    "circularReference": "Cannot create circular reference in department hierarchy",
+    "noUsers": "No users assigned to this department",
+    "noSubDepartments": "No sub-departments under this department",
+    "noManager": "No manager assigned to this department"
+  },
+  
+  "help": {
+    "activeStatus": "Inactive departments are hidden from user selection",
+    "parentDepartment": "Select a parent to create a hierarchical structure",
+    "departmentCode": "Unique code for identification and reporting",
+    "manager": "User responsible for managing this department",
+    "budget": "Annual budget allocation for this department",
+    "sortOrder": "Order in which departments appear in lists",
+    "color": "Color helps identify the department in the interface",
+    "hierarchy": "Departments can be nested to create organizational structure"
+  },
+  
+  "validation": {
+    "nameRequired": "Department name is required",
+    "nameUnique": "Department name must be unique",
+    "nameMin": "Department name must be at least 2 characters",
+    "nameMax": "Department name cannot exceed 100 characters",
+    "codeUnique": "Department code must be unique",
+    "codeMax": "Department code cannot exceed 10 characters",
+    "descriptionMax": "Description cannot exceed 500 characters",
+    "emailValid": "Please enter a valid email address",
+    "phoneValid": "Please enter a valid phone number",
+    "budgetValid": "Budget must be a valid number",
+    "sortOrderValid": "Sort order must be a positive number",
+    "colorValid": "Please enter a valid color code",
+    "parentValid": "Please select a valid parent department",
+    "managerValid": "Please select a valid manager"
+  },
+  
+  "stats": {
+    "totalDepartments": "Total Departments",
+    "activeDepartments": "Active Departments",
+    "inactiveDepartments": "Inactive Departments",
+    "rootDepartments": "Root Departments",
+    "subDepartments": "Sub-Departments",
+    "totalUsers": "Total Users",
+    "totalBudget": "Total Budget",
+    "averageBudget": "Average Budget",
+    "departmentsWithManager": "With Manager",
+    "departmentsWithoutManager": "Without Manager"
+  },
+  
+  "breadcrumb": {
+    "home": "Home",
+    "departments": "Departments",
+    "create": "Create",
+    "edit": "Edit",
+    "view": "View"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "title": "Roles Management",
+  "subtitle": "Manage system roles and permissions",
+  "singular": "Role",
+  "plural": "Roles",
+  
+  "fields": {
+    "name": "Role Name",
+    "description": "Description",
+    "level": "Level",
+    "color": "Color",
+    "permissions": "Permissions",
+    "users": "Users",
+    "status": "Status",
+    "active": "Active",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At"
+  },
+  
+  "placeholders": {
+    "name": "Enter role name (e.g., manager, editor)",
+    "description": "Enter role description",
+    "searchPlaceholder": "Search roles by name or description..."
+  },
+  
+  "actions": {
+    "create": "Create Role",
+    "edit": "Edit Role",
+    "view": "View Role",
+    "delete": "Delete Role",
+    "duplicate": "Duplicate Role",
+    "toggleStatus": "Toggle Status",
+    "assignPermissions": "Assign Permissions",
+    "manageUsers": "Manage Users"
+  },
+  
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  
+  "levels": {
+    "basic": "Basic",
+    "intermediate": "Intermediate", 
+    "advanced": "Advanced",
+    "admin": "Administrator"
+  },
+  
+  "groups": {
+    "users": "User Management",
+    "roles": "Role Management",
+    "permissions": "Permission Management",
+    "settings": "System Settings",
+    "reports": "Reports & Analytics",
+    "content": "Content Management",
+    "system": "System Administration"
+  },
+  
+  "filters": {
+    "searchPlaceholder": "Search roles...",
+    "allStatus": "All Status",
+    "allLevels": "All Levels",
+    "activeOnly": "Active Only",
+    "inactiveOnly": "Inactive Only"
+  },
+  
+  "sections": {
+    "basicInfo": "Basic Information",
+    "permissions": "Permissions & Access",
+    "summary": "Role Summary",
+    "users": "Assigned Users",
+    "settings": "Role Settings"
+  },
+  
+  "messages": {
+    "createSuccess": "Role created successfully",
+    "updateSuccess": "Role updated successfully", 
+    "deleteSuccess": "Role deleted successfully",
+    "duplicateSuccess": "Role duplicated successfully",
+    "statusToggled": "Role status updated successfully",
+    "permissionsUpdated": "Permissions updated successfully",
+    
+    "confirmDelete": "Are you sure you want to delete the role '{{name}}'?",
+    "confirmToggleStatus": "Are you sure you want to change the status of role '{{name}}'?",
+    "duplicateName": "Enter name for the duplicated role:",
+    
+    "createDescription": "Create a new role with specific permissions and access levels",
+    "editDescription": "Edit role '{{name}}' settings and permissions",
+    
+    "cannotDelete": "This role cannot be deleted as it has users assigned to it",
+    "cannotDeleteSystem": "System roles cannot be deleted",
+    "noPermissions": "No permissions assigned to this role",
+    "noUsers": "No users assigned to this role"
+  },
+  
+  "help": {
+    "activeStatus": "Inactive roles cannot be assigned to users",
+    "roleLevel": "Higher level roles may have more system access",
+    "permissions": "Select permissions that users with this role should have",
+    "color": "Color helps identify the role in the interface",
+    "systemRole": "System roles have special restrictions"
+  },
+  
+  "validation": {
+    "nameRequired": "Role name is required",
+    "nameUnique": "Role name must be unique",
+    "nameMin": "Role name must be at least 2 characters",
+    "nameMax": "Role name cannot exceed 50 characters",
+    "descriptionMax": "Description cannot exceed 255 characters",
+    "levelRequired": "Role level is required",
+    "levelValid": "Role level must be between 1 and 4",
+    "colorValid": "Please enter a valid color code",
+    "permissionsRequired": "At least one permission must be selected"
+  },
+  
+  "stats": {
+    "totalRoles": "Total Roles",
+    "activeRoles": "Active Roles", 
+    "inactiveRoles": "Inactive Roles",
+    "systemRoles": "System Roles",
+    "customRoles": "Custom Roles",
+    "usersAssigned": "Users Assigned",
+    "permissionsGranted": "Permissions Granted"
+  }
+}

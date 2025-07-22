@@ -1,0 +1,25 @@
+{
+    "name": "Departments",
+    "display_name": "Departments",
+    "description": "Module for managing departments",
+    "version": "1.0.0",
+    "active": true,
+    "critical": false,
+    "dependencies": [],
+    "permissions": [
+        "departments.view",
+        "departments.create",
+        "departments.edit",
+        "departments.delete"
+    ],
+    "navigation": {
+        "name": "departments",
+        "href": "/departments",
+        "icon": "BuildingOfficeIcon",
+        "order": 300
+    },
+    "config": {
+        "per_page": 15,
+        "cache_enabled": true
+    }
+}

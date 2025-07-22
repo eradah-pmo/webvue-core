@@ -1,0 +1,113 @@
+{
+  "appName": "لوحة تحكم معيارية",
+  "welcome": "مرحباً بك",
+  "welcomeMessage": "نظام إدارة معياري شامل مع ميزات أمان متقدمة، وتحكم بالصلاحيات، وتسجيل للتدقيق.",
+  "login": "تسجيل الدخول",
+  "register": "إنشاء حساب",
+  "dashboard": "لوحة التحكم",
+  "features": {
+    "rbac": "نظام صلاحيات متقدم",
+    "security": "أمان متطور",
+    "analytics": "تحليلات مباشرة",
+    "audit": "سجلات التدقيق"
+  },
+  "featureDescriptions": {
+    "rbac": "نظام صلاحيات أفقي وعمودي متكامل.",
+    "security": "حماية على مستوى المؤسسات مع حماية شاملة.",
+    "analytics": "قدرات تحليل وتقارير مفصلة.",
+    "audit": "سجل تدقيق كامل لجميع أنشطة النظام."
+  },
+  "app": {
+    "name": "لوحة التحكم الإدارية المعيارية",
+    "version": "1.0.0"
+  },
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "test_navigation": "اختبار التوجيه",
+    "users": "المستخدمون",
+    "roles": "الأدوار والصلاحيات",
+    "departments": "الأقسام",
+    "modules": "الوحدات",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "actions": {
+    "create": "إنشاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "submit": "إرسال",
+    "reset": "إعادة تعيين",
+    "search": "بحث",
+    "filter": "تصفية",
+    "export": "تصدير",
+    "import": "استيراد",
+    "view": "عرض",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "refresh": "تحديث",
+    "close": "إغلاق",
+    "confirm": "تأكيد",
+    "enable": "تفعيل",
+    "disable": "إلغاء تفعيل",
+    "activate": "تنشيط",
+    "deactivate": "إلغاء تنشيط"
+  },
+  "status": {
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "enabled": "مفعل",
+    "disabled": "معطل",
+    "online": "متصل",
+    "offline": "غير متصل",
+    "pending": "في الانتظار",
+    "approved": "موافق عليه",
+    "rejected": "مرفوض"
+  },
+  "messages": {
+    "loading": "جاري التحميل...",
+    "saving": "جاري الحفظ...",
+    "saved": "تم الحفظ بنجاح",
+    "deleted": "تم الحذف بنجاح",
+    "error": "حدث خطأ",
+    "success": "تمت العملية بنجاح",
+    "no_data": "لا توجد بيانات متاحة",
+    "confirm_delete": "هل أنت متأكد من حذف هذا العنصر؟",
+    "unsaved_changes": "لديك تغييرات غير محفوظة. هل أنت متأكد من المغادرة؟",
+    "permission_denied": "ليس لديك صلاحية لتنفيذ هذا الإجراء",
+    "network_error": "خطأ في الشبكة. يرجى التحقق من الاتصال.",
+    "validation_error": "يرجى التحقق من النموذج للأخطاء"
+  },
+  "fields": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "description": "الوصف",
+    "status": "الحالة",
+    "created_at": "تاريخ الإنشاء",
+    "updated_at": "تاريخ التحديث",
+    "actions": "الإجراءات",
+    "search_placeholder": "بحث...",
+    "select_option": "اختر خياراً",
+    "required": "مطلوب",
+    "optional": "اختياري"
+  },
+  "pagination": {
+    "showing": "عرض",
+    "to": "إلى",
+    "of": "من",
+    "results": "نتيجة",
+    "per_page": "لكل صفحة",
+    "first": "الأول",
+    "last": "الأخير",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "العربية",
+    "switch_language": "تغيير اللغة"
+  }
+}

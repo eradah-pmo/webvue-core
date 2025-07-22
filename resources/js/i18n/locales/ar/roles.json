@@ -1,0 +1,127 @@
+{
+  "title": "إدارة الأدوار",
+  "subtitle": "إدارة أدوار النظام والصلاحيات",
+  "singular": "دور",
+  "plural": "الأدوار",
+  
+  "fields": {
+    "name": "اسم الدور",
+    "description": "الوصف",
+    "level": "المستوى",
+    "color": "اللون",
+    "permissions": "الصلاحيات",
+    "users": "المستخدمون",
+    "status": "الحالة",
+    "active": "نشط",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "تاريخ التحديث"
+  },
+  
+  "placeholders": {
+    "name": "أدخل اسم الدور (مثل: مدير، محرر)",
+    "description": "أدخل وصف الدور",
+    "searchPlaceholder": "البحث في الأدوار بالاسم أو الوصف..."
+  },
+  
+  "actions": {
+    "create": "إنشاء دور",
+    "edit": "تعديل الدور",
+    "view": "عرض الدور",
+    "delete": "حذف الدور",
+    "duplicate": "نسخ الدور",
+    "toggleStatus": "تغيير الحالة",
+    "assignPermissions": "تعيين الصلاحيات",
+    "manageUsers": "إدارة المستخدمين"
+  },
+  
+  "status": {
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "enabled": "مفعل",
+    "disabled": "معطل"
+  },
+  
+  "levels": {
+    "basic": "أساسي",
+    "intermediate": "متوسط", 
+    "advanced": "متقدم",
+    "admin": "مدير النظام"
+  },
+  
+  "groups": {
+    "users": "إدارة المستخدمين",
+    "roles": "إدارة الأدوار",
+    "permissions": "إدارة الصلاحيات",
+    "settings": "إعدادات النظام",
+    "reports": "التقارير والتحليلات",
+    "content": "إدارة المحتوى",
+    "system": "إدارة النظام"
+  },
+  
+  "filters": {
+    "searchPlaceholder": "البحث في الأدوار...",
+    "allStatus": "جميع الحالات",
+    "allLevels": "جميع المستويات",
+    "activeOnly": "النشط فقط",
+    "inactiveOnly": "غير النشط فقط"
+  },
+  
+  "sections": {
+    "basicInfo": "المعلومات الأساسية",
+    "permissions": "الصلاحيات والوصول",
+    "summary": "ملخص الدور",
+    "users": "المستخدمون المعينون",
+    "settings": "إعدادات الدور"
+  },
+  
+  "messages": {
+    "createSuccess": "تم إنشاء الدور بنجاح",
+    "updateSuccess": "تم تحديث الدور بنجاح", 
+    "deleteSuccess": "تم حذف الدور بنجاح",
+    "duplicateSuccess": "تم نسخ الدور بنجاح",
+    "statusToggled": "تم تحديث حالة الدور بنجاح",
+    "permissionsUpdated": "تم تحديث الصلاحيات بنجاح",
+    
+    "confirmDelete": "هل أنت متأكد من حذف الدور '{{name}}'؟",
+    "confirmToggleStatus": "هل أنت متأكد من تغيير حالة الدور '{{name}}'؟",
+    "duplicateName": "أدخل اسم الدور المنسوخ:",
+    
+    "createDescription": "إنشاء دور جديد مع صلاحيات ومستويات وصول محددة",
+    "editDescription": "تعديل إعدادات وصلاحيات الدور '{{name}}'",
+    
+    "cannotDelete": "لا يمكن حذف هذا الدور لأن له مستخدمين معينين",
+    "cannotDeleteSystem": "لا يمكن حذف أدوار النظام",
+    "noPermissions": "لا توجد صلاحيات معينة لهذا الدور",
+    "noUsers": "لا يوجد مستخدمون معينون لهذا الدور"
+  },
+  
+  "help": {
+    "activeStatus": "الأدوار غير النشطة لا يمكن تعيينها للمستخدمين",
+    "roleLevel": "الأدوار ذات المستوى الأعلى قد تحصل على وصول أكبر للنظام",
+    "permissions": "اختر الصلاحيات التي يجب أن يحصل عليها المستخدمون مع هذا الدور",
+    "color": "اللون يساعد في تحديد الدور في الواجهة",
+    "systemRole": "أدوار النظام لها قيود خاصة"
+  },
+  
+  "validation": {
+    "nameRequired": "اسم الدور مطلوب",
+    "nameUnique": "اسم الدور يجب أن يكون فريداً",
+    "nameMin": "اسم الدور يجب أن يكون على الأقل حرفين",
+    "nameMax": "اسم الدور لا يمكن أن يتجاوز 50 حرفاً",
+    "descriptionMax": "الوصف لا يمكن أن يتجاوز 255 حرفاً",
+    "levelRequired": "مستوى الدور مطلوب",
+    "levelValid": "مستوى الدور يجب أن يكون بين 1 و 4",
+    "colorValid": "يرجى إدخال رمز لون صحيح",
+    "permissionsRequired": "يجب اختيار صلاحية واحدة على الأقل"
+  },
+  
+  "stats": {
+    "totalRoles": "إجمالي الأدوار",
+    "activeRoles": "الأدوار النشطة", 
+    "inactiveRoles": "الأدوار غير النشطة",
+    "systemRoles": "أدوار النظام",
+    "customRoles": "الأدوار المخصصة",
+    "usersAssigned": "المستخدمون المعينون",
+    "permissionsGranted": "الصلاحيات الممنوحة"
+  }
+}

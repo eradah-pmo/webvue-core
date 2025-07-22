@@ -1,0 +1,20 @@
+{
+  "appName": "Modular Admin Dashboard",
+  "welcome": "Welcome",
+  "welcomeMessage": "A comprehensive modular administration system with advanced security, RBAC, and audit logging capabilities.",
+  "login": "Login",
+  "register": "Register",
+  "dashboard": "Dashboard",
+  "features": {
+    "rbac": "Role-Based Access",
+    "security": "Advanced Security",
+    "analytics": "Real-time Analytics",
+    "audit": "Audit Logging"
+  },
+  "featureDescriptions": {
+    "rbac": "Horizontal and vertical role-based access control system.",
+    "security": "Enterprise-grade security with comprehensive protection.",
+    "analytics": "Detailed analytics and reporting capabilities.",
+    "audit": "Complete audit trail of all system activities."
+  }
+}

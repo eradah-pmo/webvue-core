@@ -1,0 +1,25 @@
+{
+    "name": "Settings",
+    "display_name": "Settings",
+    "description": "Module for managing settings",
+    "version": "1.0.0",
+    "active": true,
+    "critical": false,
+    "dependencies": [],
+    "permissions": [
+        "settings.view",
+        "settings.create",
+        "settings.edit",
+        "settings.delete"
+    ],
+    "navigation": {
+        "name": "settings",
+        "href": "/settings",
+        "icon": "Cog6ToothIcon",
+        "order": 400
+    },
+    "config": {
+        "per_page": 15,
+        "cache_enabled": true
+    }
+}

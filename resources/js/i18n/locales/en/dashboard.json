@@ -1,0 +1,45 @@
+{
+  "welcome": {
+    "title": "Welcome to your Dashboard",
+    "subtitle": "Monitor your system and manage your modules from here"
+  },
+  "recent_activities": {
+    "title": "Recent Activities"
+  },
+  "active_modules": {
+    "title": "Active Modules"
+  },
+  "quick_actions": {
+    "title": "Quick Actions",
+    "create_user_desc": "Add a new user to the system",
+    "create_role_desc": "Define new roles and permissions",
+    "create_department_desc": "Set up organizational departments",
+    "manage_modules_desc": "Configure system modules"
+  },
+  "stats": {
+    "title": "Advanced Statistics",
+    "total_users": "Total Users",
+    "active_users": "Active Users",
+    "total_roles": "Total Roles",
+    "total_departments": "Total Departments",
+    "active_modules": "Active Modules",
+    "daily_activities": "Daily Activities",
+    "vs_last_month": "vs last month",
+    "vs_yesterday": "vs yesterday"
+  },
+  "charts": {
+    "users_growth": "Users Growth",
+    "activity_trend": "Activity Trend",
+    "department_distribution": "Department Distribution",
+    "role_usage": "Role Usage"
+  },
+  "alerts": {
+    "title": "System Alerts",
+    "no_alerts": "No alerts at the moment",
+    "inactive_users": "Inactive Users",
+    "failed_logins": "Failed Login Attempts",
+    "low_activity": "Low Activity",
+    "security_warning": "Security Warning",
+    "system_health": "System Health"
+  }
+}

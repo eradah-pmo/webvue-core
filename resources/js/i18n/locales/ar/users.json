@@ -1,0 +1,69 @@
+{
+  "title": "المستخدمون",
+  "description": "إدارة مستخدمي النظام وصلاحياتهم",
+  "create": "إنشاء مستخدم",
+  "edit": "تعديل المستخدم",
+  "createDescription": "إضافة مستخدم جديد إلى النظام",
+  "editDescription": "تحديث معلومات المستخدم والصلاحيات",
+  "personalInfo": "المعلومات الشخصية",
+  "organizationInfo": "المؤسسة والصلاحيات",
+  "selectDepartment": "اختر القسم",
+  "fields": {
+    "user": "المستخدم",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "password": "كلمة المرور",
+    "passwordConfirmation": "تأكيد كلمة المرور",
+    "department": "القسم",
+    "contact": "معلومات الاتصال",
+    "active": "مستخدم نشط",
+    "roles": "الأدوار",
+    "permissions": "الصلاحيات",
+    "lastLogin": "آخر تسجيل دخول",
+    "createdAt": "تاريخ الإنشاء"
+  },
+  "placeholders": {
+    "firstName": "أدخل الاسم الأول",
+    "lastName": "أدخل الاسم الأخير",
+    "email": "user@example.com",
+    "phone": "+966 50 123 4567",
+    "password": "أدخل كلمة المرور",
+    "passwordConfirmation": "أكد كلمة المرور"
+  },
+  "messages": {
+    "created": "تم إنشاء المستخدم بنجاح",
+    "updated": "تم تحديث المستخدم بنجاح",
+    "deleted": "تم حذف المستخدم بنجاح",
+    "statusToggled": "تم تحديث حالة المستخدم بنجاح",
+    "passwordReset": "تم إرسال رابط إعادة تعيين كلمة المرور",
+    "confirmDelete": "هل أنت متأكد من حذف هذا المستخدم؟",
+    "confirmStatusChange": "هل أنت متأكد من تغيير حالة هذا المستخدم؟"
+  },
+  "validation": {
+    "firstNameRequired": "الاسم الأول مطلوب",
+    "lastNameRequired": "الاسم الأخير مطلوب",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "passwordMin": "كلمة المرور يجب أن تكون 8 أحرف على الأقل",
+    "passwordConfirmation": "تأكيد كلمة المرور يجب أن يطابق كلمة المرور"
+  },
+  "filters": {
+    "all": "جميع المستخدمين",
+    "active": "المستخدمون النشطون",
+    "inactive": "المستخدمون غير النشطين",
+    "byDepartment": "حسب القسم",
+    "byRole": "حسب الدور"
+  },
+  "actions": {
+    "view": "عرض المستخدم",
+    "edit": "تعديل المستخدم",
+    "delete": "حذف المستخدم",
+    "toggleStatus": "تغيير الحالة",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "assignRole": "تعيين دور",
+    "removeRole": "إزالة دور"
+  }
+}

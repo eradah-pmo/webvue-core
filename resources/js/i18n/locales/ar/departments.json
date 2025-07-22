@@ -1,0 +1,170 @@
+{
+  "title": "إدارة الأقسام",
+  "subtitle": "إدارة أقسام المؤسسة والهيكل التنظيمي",
+  "singular": "قسم",
+  "plural": "الأقسام",
+  
+  "fields": {
+    "name": "اسم القسم",
+    "description": "الوصف",
+    "code": "رمز القسم",
+    "parent": "القسم الرئيسي",
+    "manager": "مدير القسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "budget": "الميزانية",
+    "color": "اللون",
+    "sortOrder": "ترتيب العرض",
+    "users": "المستخدمون",
+    "subDepartments": "الأقسام الفرعية",
+    "status": "الحالة",
+    "active": "نشط",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "تاريخ التحديث"
+  },
+  
+  "placeholders": {
+    "name": "أدخل اسم القسم",
+    "description": "أدخل وصف القسم",
+    "code": "أدخل رمز القسم (مثل: تقنية، موارد، مالية)",
+    "selectParent": "اختر القسم الرئيسي",
+    "selectManager": "اختر مدير القسم",
+    "email": "department@company.com",
+    "phone": "+966 50 123 4567",
+    "address": "أدخل عنوان القسم",
+    "budget": "0.00",
+    "sortOrder": "1",
+    "searchPlaceholder": "البحث في الأقسام بالاسم أو الرمز أو الوصف..."
+  },
+  
+  "actions": {
+    "create": "إنشاء قسم",
+    "edit": "تعديل القسم",
+    "view": "عرض القسم",
+    "delete": "حذف القسم",
+    "toggleStatus": "تغيير الحالة",
+    "move": "نقل القسم",
+    "reorder": "إعادة ترتيب الأقسام",
+    "generateCode": "توليد",
+    "assignManager": "تعيين مدير",
+    "manageUsers": "إدارة المستخدمين"
+  },
+  
+  "status": {
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "enabled": "مفعل",
+    "disabled": "معطل"
+  },
+  
+  "labels": {
+    "rootDepartment": "قسم رئيسي",
+    "hierarchyLevel": "المستوى {{level}}",
+    "totalBudget": "إجمالي الميزانية",
+    "totalUsers": "إجمالي المستخدمين",
+    "directReports": "التقارير المباشرة"
+  },
+  
+  "views": {
+    "table": "عرض جدولي",
+    "tree": "عرض شجري",
+    "hierarchy": "عرض هرمي",
+    "cards": "عرض البطاقات"
+  },
+  
+  "filters": {
+    "searchPlaceholder": "البحث في الأقسام...",
+    "allStatus": "جميع الحالات",
+    "allDepartments": "جميع الأقسام",
+    "rootOnly": "الأقسام الرئيسية فقط",
+    "activeOnly": "النشط فقط",
+    "inactiveOnly": "غير النشط فقط",
+    "withManager": "مع مدير",
+    "withoutManager": "بدون مدير"
+  },
+  
+  "sections": {
+    "basicInfo": "المعلومات الأساسية",
+    "contactInfo": "معلومات الاتصال",
+    "additionalSettings": "الإعدادات الإضافية",
+    "hierarchy": "الهيكل التنظيمي",
+    "summary": "ملخص القسم",
+    "users": "مستخدمو القسم",
+    "subDepartments": "الأقسام الفرعية",
+    "statistics": "الإحصائيات"
+  },
+  
+  "messages": {
+    "createSuccess": "تم إنشاء القسم بنجاح",
+    "updateSuccess": "تم تحديث القسم بنجاح",
+    "deleteSuccess": "تم حذف القسم بنجاح",
+    "statusToggled": "تم تحديث حالة القسم بنجاح",
+    "moved": "تم نقل القسم بنجاح",
+    "reordered": "تم إعادة ترتيب الأقسام بنجاح",
+    
+    "confirmDelete": "هل أنت متأكد من حذف القسم '{{name}}'؟",
+    "confirmToggleStatus": "هل أنت متأكد من تغيير حالة القسم '{{name}}'؟",
+    "confirmMove": "هل أنت متأكد من نقل القسم '{{name}}'؟",
+    
+    "createDescription": "إنشاء قسم جديد مع الهيكل التنظيمي والإعدادات",
+    "editDescription": "تعديل إعدادات ومعلومات القسم '{{name}}'",
+    
+    "cannotDelete": "لا يمكن حذف هذا القسم لأن له مستخدمين أو أقسام فرعية",
+    "cannotDeleteWithUsers": "لا يمكن حذف القسم الذي يحتوي على مستخدمين",
+    "cannotDeleteWithSubDepartments": "لا يمكن حذف القسم الذي يحتوي على أقسام فرعية",
+    "circularReference": "لا يمكن إنشاء مرجع دائري في الهيكل التنظيمي",
+    "noUsers": "لا يوجد مستخدمون معينون لهذا القسم",
+    "noSubDepartments": "لا توجد أقسام فرعية تحت هذا القسم",
+    "noManager": "لا يوجد مدير معين لهذا القسم"
+  },
+  
+  "help": {
+    "activeStatus": "الأقسام غير النشطة مخفية من اختيار المستخدم",
+    "parentDepartment": "اختر قسماً رئيسياً لإنشاء هيكل هرمي",
+    "departmentCode": "رمز فريد للتعريف والتقارير",
+    "manager": "المستخدم المسؤول عن إدارة هذا القسم",
+    "budget": "تخصيص الميزانية السنوية لهذا القسم",
+    "sortOrder": "الترتيب الذي تظهر به الأقسام في القوائم",
+    "color": "اللون يساعد في تحديد القسم في الواجهة",
+    "hierarchy": "يمكن تداخل الأقسام لإنشاء هيكل تنظيمي"
+  },
+  
+  "validation": {
+    "nameRequired": "اسم القسم مطلوب",
+    "nameUnique": "اسم القسم يجب أن يكون فريداً",
+    "nameMin": "اسم القسم يجب أن يكون على الأقل حرفين",
+    "nameMax": "اسم القسم لا يمكن أن يتجاوز 100 حرف",
+    "codeUnique": "رمز القسم يجب أن يكون فريداً",
+    "codeMax": "رمز القسم لا يمكن أن يتجاوز 10 أحرف",
+    "descriptionMax": "الوصف لا يمكن أن يتجاوز 500 حرف",
+    "emailValid": "يرجى إدخال بريد إلكتروني صحيح",
+    "phoneValid": "يرجى إدخال رقم هاتف صحيح",
+    "budgetValid": "الميزانية يجب أن تكون رقماً صحيحاً",
+    "sortOrderValid": "ترتيب العرض يجب أن يكون رقماً موجباً",
+    "colorValid": "يرجى إدخال رمز لون صحيح",
+    "parentValid": "يرجى اختيار قسم رئيسي صحيح",
+    "managerValid": "يرجى اختيار مدير صحيح"
+  },
+  
+  "stats": {
+    "totalDepartments": "إجمالي الأقسام",
+    "activeDepartments": "الأقسام النشطة",
+    "inactiveDepartments": "الأقسام غير النشطة",
+    "rootDepartments": "الأقسام الرئيسية",
+    "subDepartments": "الأقسام الفرعية",
+    "totalUsers": "إجمالي المستخدمين",
+    "totalBudget": "إجمالي الميزانية",
+    "averageBudget": "متوسط الميزانية",
+    "departmentsWithManager": "مع مدير",
+    "departmentsWithoutManager": "بدون مدير"
+  },
+  
+  "breadcrumb": {
+    "home": "الرئيسية",
+    "departments": "الأقسام",
+    "create": "إنشاء",
+    "edit": "تعديل",
+    "view": "عرض"
+  }
+}

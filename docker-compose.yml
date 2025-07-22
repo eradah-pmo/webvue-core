@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: modular_admin_app
+    restart: unless-stopped
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+      - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - modular_admin_network
+    depends_on:
+      - database
+      - redis
+
+  webserver:
+    image: nginx:alpine
+    container_name: modular_admin_webserver
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - modular_admin_network
+    depends_on:
+      - app
+
+  database:
+    image: mysql:8.0
+    container_name: modular_admin_database
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: modular_admin_dashboard
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: laravel_password
+    volumes:
+      - database_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - modular_admin_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: modular_admin_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - modular_admin_network
+
+  node:
+    image: node:18-alpine
+    container_name: modular_admin_node
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "5173:5173"
+    networks:
+      - modular_admin_network
+
+networks:
+  modular_admin_network:
+    driver: bridge
+
+volumes:
+  database_data:
+    driver: local

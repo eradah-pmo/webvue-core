@@ -1,0 +1,25 @@
+{
+    "name": "Users",
+    "display_name": "Users",
+    "description": "Module for managing users",
+    "version": "1.0.0",
+    "active": true,
+    "critical": false,
+    "dependencies": [],
+    "permissions": [
+        "users.view",
+        "users.create",
+        "users.edit",
+        "users.delete"
+    ],
+    "navigation": {
+        "name": "users",
+        "href": "/users",
+        "icon": "UsersIcon",
+        "order": 100
+    },
+    "config": {
+        "per_page": 15,
+        "cache_enabled": true
+    }
+}

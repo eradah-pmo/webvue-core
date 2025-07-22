@@ -1,0 +1,43 @@
+{
+    "name": "AuditLogs",
+    "display_name": "Audit Logs",
+    "description": "Comprehensive audit logging and monitoring system for tracking user activities and system events",
+    "version": "1.0.0",
+    "active": true,
+    "critical": false,
+    "dependencies": [],
+    "permissions": [
+        "audit-logs.view",
+        "audit-logs.export",
+        "audit-logs.dashboard"
+    ],
+    "navigation": {
+        "name": "audit_logs",
+        "href": "/audit-logs",
+        "icon": "ShieldCheckIcon",
+        "order": 50,
+        "children": [
+            {
+                "name": "dashboard",
+                "href": "/audit-logs/dashboard",
+                "icon": "ChartBarIcon",
+                "permission": "audit-logs.dashboard"
+            },
+            {
+                "name": "logs",
+                "href": "/audit-logs",
+                "icon": "DocumentTextIcon",
+                "permission": "audit-logs.view"
+            }
+        ]
+    },
+    "routes": {
+        "web": "routes.php"
+    },
+    "providers": [
+        "Providers\\AuditLogsServiceProvider"
+    ],
+    "last_updated": "2025-07-20T12:20:00.000Z",
+    "author": "Modular Admin Dashboard",
+    "tags": ["security", "logging", "audit", "monitoring"]
+}

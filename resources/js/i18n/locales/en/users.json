@@ -1,0 +1,69 @@
+{
+  "title": "Users",
+  "description": "Manage system users and their permissions",
+  "create": "Create User",
+  "edit": "Edit User",
+  "createDescription": "Add a new user to the system",
+  "editDescription": "Update user information and permissions",
+  "personalInfo": "Personal Information",
+  "organizationInfo": "Organization & Permissions",
+  "selectDepartment": "Select Department",
+  "fields": {
+    "user": "User",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "password": "Password",
+    "passwordConfirmation": "Confirm Password",
+    "department": "Department",
+    "contact": "Contact Information",
+    "active": "Active User",
+    "roles": "Roles",
+    "permissions": "Permissions",
+    "lastLogin": "Last Login",
+    "createdAt": "Created At"
+  },
+  "placeholders": {
+    "firstName": "Enter first name",
+    "lastName": "Enter last name",
+    "email": "user@example.com",
+    "phone": "+1 (555) 123-4567",
+    "password": "Enter password",
+    "passwordConfirmation": "Confirm password"
+  },
+  "messages": {
+    "created": "User created successfully",
+    "updated": "User updated successfully",
+    "deleted": "User deleted successfully",
+    "statusToggled": "User status updated successfully",
+    "passwordReset": "Password reset email sent",
+    "confirmDelete": "Are you sure you want to delete this user?",
+    "confirmStatusChange": "Are you sure you want to change this user's status?"
+  },
+  "validation": {
+    "firstNameRequired": "First name is required",
+    "lastNameRequired": "Last name is required",
+    "emailRequired": "Email address is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordConfirmation": "Password confirmation must match"
+  },
+  "filters": {
+    "all": "All Users",
+    "active": "Active Users",
+    "inactive": "Inactive Users",
+    "byDepartment": "By Department",
+    "byRole": "By Role"
+  },
+  "actions": {
+    "view": "View User",
+    "edit": "Edit User",
+    "delete": "Delete User",
+    "toggleStatus": "Toggle Status",
+    "resetPassword": "Reset Password",
+    "assignRole": "Assign Role",
+    "removeRole": "Remove Role"
+  }
+}

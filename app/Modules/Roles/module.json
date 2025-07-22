@@ -1,0 +1,25 @@
+{
+    "name": "Roles",
+    "display_name": "Roles",
+    "description": "Module for managing roles",
+    "version": "1.0.0",
+    "active": true,
+    "critical": false,
+    "dependencies": [],
+    "permissions": [
+        "roles.view",
+        "roles.create",
+        "roles.edit",
+        "roles.delete"
+    ],
+    "navigation": {
+        "name": "roles",
+        "href": "/roles",
+        "icon": "ShieldCheckIcon",
+        "order": 200
+    },
+    "config": {
+        "per_page": 15,
+        "cache_enabled": true
+    }
+}
